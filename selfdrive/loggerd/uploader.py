@@ -23,7 +23,7 @@ UPLOAD_ATTR_VALUE = b'1'
 
 allow_sleep = bool(os.getenv("UPLOADER_SLEEP", "1"))
 force_wifi = os.getenv("FORCEWIFI") is not None
-fake_upload = os.getenv("FAKEUPLOAD") is not None
+fake_upload = os.getenv("FAKEUPLOAD") is None
 
 
 def get_directory_sort(d):
